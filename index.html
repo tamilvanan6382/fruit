@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S.S.T Fruits - Premium Fresh Fruits</title>
+    <meta name="description" content="Order farm-fresh fruits online. Clean. Simple. Delivered to your door.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container container">
+            <a href="#" class="brand-logo">🍎 S.S.T Fruits</a>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#catalog">Fruits</a></li>
+                <li><a href="#how-it-works">How It Works</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <div class="nav-right">
+                <button class="lang-selector">en ▾</button>
+                <div class="cart-icon-wrapper">
+                    <span class="cart-count">0</span>
+                    🛒
+                </div>
+                <a href="#catalog" class="btn btn-primary btn-sm">Order Now</a>
+            </div>
+
+            <div class="mobile-menu-btn">☰</div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu">
+        <span class="close-menu">&times;</span>
+        <a href="#home">Home</a>
+        <a href="#catalog">Fruits</a>
+        <a href="#how-it-works">How It Works</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <h1>Premium Fresh Fruits<br>Delivered to Your Door</h1>
+                <p class="hero-sub">S.S.T Fruits brings you the finest selection of handpicked fruits, sourced directly
+                    from farms across India.</p>
+                <div class="hero-buttons">
+                    <a href="#catalog" class="btn btn-primary">🛒 Order Fruits</a>
+                    <a href="#contact" class="btn btn-secondary">📞 Contact Us</a>
+                </div>
+                <p class="hero-differentiator">
+                    Freshly brings hand-picked fruits from trusted farms.<br>
+                    No chemicals. No confusion. Just real freshness.
+                </p>
+            </div>
+            <div class="hero-image">
+                <img src="assets/hero-fruits.png" alt="Floating fresh fruits 3D composition">
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section id="how-it-works" class="section-padding how-it-works">
+        <div class="container">
+            <h2 class="section-title">Fresh Fruits in 3 Easy Steps</h2>
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <h3>Choose Fruits</h3>
+                    <p>Pick apples, bananas, mangoes, and more from our fresh list.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <h3>Place Order</h3>
+                    <p>Add to cart, choose quantity, and checkout in seconds.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <h3>Fast Delivery</h3>
+                    <p>We deliver fresh fruits safely to your home.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fruits Catalog -->
+    <section id="catalog" class="section-padding catalog">
+        <div class="container">
+            <h2 class="section-title">Today’s Fresh Picks 🍓</h2>
+            <div class="catalog-grid">
+                <!-- Apple Card - Clickable for varieties -->
+                <div class="fruit-card apple-card" style="cursor: pointer;" onclick="showAppleVarieties()">
+                    <div class="fruit-img-wrapper">
+                        <img src="assets/apple.png" alt="Red Apple">
+                    </div>
+                    <div class="fruit-info">
+                        <h3>Red Apples</h3>
+                        <p class="fruit-desc">Sweet, crispy - Click to see Indian varieties</p>
+                        <p class="fruit-price">Starting from ₹180 / kg</p>
+                        <button class="btn btn-primary btn-block" onclick="event.stopPropagation();">View Varieties
+                            →</button>
+                    </div>
+                </div>
+
+                <!-- Banana Card - Clickable for varieties -->
+                <div class="fruit-card banana-card" style="cursor: pointer;" onclick="showBananaVarieties()">
+                    <div class="fruit-img-wrapper">
+                        <img src="assets/banana.png" alt="Fresh Bananas">
+                    </div>
+                    <div class="fruit-info">
+                        <h3>Fresh Bananas</h3>
+                        <p class="fruit-desc">Click to see Indian varieties</p>
+                        <p class="fruit-price">Starting from ₹40 / dozen</p>
+                        <button class="btn btn-primary btn-block" onclick="event.stopPropagation();">View Varieties
+                            →</button>
+                    </div>
+                </div>
+
+                <!-- Orange Card - Clickable for varieties -->
+                <div class="fruit-card orange-card" style="cursor: pointer;" onclick="showOrangeVarieties()">
+                    <div class="fruit-img-wrapper">
+                        <img src="assets/orange.png" alt="Juicy Oranges">
+                    </div>
+                    <div class="fruit-info">
+                        <h3>Juicy Oranges</h3>
+                        <p class="fruit-desc">Full of vitamin C - Click to see varieties</p>
+                        <p class="fruit-price">Starting from ₹200 / kg</p>
+                        <button class="btn btn-primary btn-block" onclick="event.stopPropagation();">View Varieties
+                            →</button>
+                    </div>
+                </div>
+
+                <!-- Grapes Card -->
+                <div class="fruit-card">
+                    <div class="fruit-img-wrapper"
+                        style="font-size: 80px; display: flex; align-items: center; justify-content: center;">
+                        🍇
+                    </div>
+                    <div class="fruit-info">
+                        <h3>Green Grapes</h3>
+                        <p class="fruit-desc">Sweet and seedless</p>
+                        <p class="fruit-price">₹200 / kg</p>
+                        <button class="btn btn-primary btn-block add-to-cart" data-name="Green Grapes"
+                            data-price="200">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Mango Card -->
+                <div class="fruit-card">
+                    <div class="fruit-img-wrapper"
+                        style="font-size: 80px; display: flex; align-items: center; justify-content: center;">
+                        🥭
+                    </div>
+                    <div class="fruit-info">
+                        <h3>Ripe Mangoes</h3>
+                        <p class="fruit-desc">King of fruits</p>
+                        <p class="fruit-price">₹180 / kg</p>
+                        <button class="btn btn-primary btn-block add-to-cart" data-name="Ripe Mangoes"
+                            data-price="180">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Pineapple Card -->
+                <div class="fruit-card">
+                    <div class="fruit-img-wrapper"
+                        style="font-size: 80px; display: flex; align-items: center; justify-content: center;">
+                        🍍
+                    </div>
+                    <div class="fruit-info">
+                        <h3>Fresh Pineapple</h3>
+                        <p class="fruit-desc">Tropical and tangy</p>
+                        <p class="fruit-price">₹120 / kg</p>
+                        <button class="btn btn-primary btn-block add-to-cart" data-name="Fresh Pineapple"
+                            data-price="120">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Strawberry Card -->
+                <div class="fruit-card">
+                    <div class="fruit-img-wrapper"
+                        style="font-size: 80px; display: flex; align-items: center; justify-content: center;">
+                        🍓
+                    </div>
+                    <div class="fruit-info">
+                        <h3>Strawberries</h3>
+                        <p class="fruit-desc">Sweet and juicy</p>
+                        <p class="fruit-price">₹400 / kg</p>
+                        <button class="btn btn-primary btn-block add-to-cart" data-name="Strawberries"
+                            data-price="400">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Watermelon Card -->
+                <div class="fruit-card">
+                    <div class="fruit-img-wrapper"
+                        style="font-size: 80px; display: flex; align-items: center; justify-content: center;">
+                        🍉
+                    </div>
+                    <div class="fruit-info">
+                        <h3>Watermelon</h3>
+                        <p class="fruit-desc">Refreshing and hydrating</p>
+                        <p class="fruit-price">₹80 / kg</p>
+                        <button class="btn btn-primary btn-block add-to-cart" data-name="Watermelon" data-price="80">Add
+                            to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Kiwi Card -->
+                <div class="fruit-card">
+                    <div class="fruit-img-wrapper"
+                        style="font-size: 80px; display: flex; align-items: center; justify-content: center;">
+                        🥝
+                    </div>
+                    <div class="fruit-info">
+                        <h3>Kiwi Fruit</h3>
+                        <p class="fruit-desc">Tangy and nutritious</p>
+                        <p class="fruit-price">₹350 / kg</p>
+                        <button class="btn btn-primary btn-block add-to-cart" data-name="Kiwi Fruit"
+                            data-price="350">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Pomegranate Card -->
+                <div class="fruit-card">
+                    <div class="fruit-img-wrapper"
+                        style="font-size: 80px; display: flex; align-items: center; justify-content: center;">
+                        🍑
+                    </div>
+                    <div class="fruit-info">
+                        <h3>Pomegranate</h3>
+                        <p class="fruit-desc">Rich in antioxidants</p>
+                        <p class="fruit-price">₹280 / kg</p>
+                        <button class="btn btn-primary btn-block add-to-cart" data-name="Pomegranate"
+                            data-price="280">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Papaya Card -->
+                <div class="fruit-card">
+                    <div class="fruit-img-wrapper"
+                        style="font-size: 80px; display: flex; align-items: center; justify-content: center;">
+                        🍈
+                    </div>
+                    <div class="fruit-info">
+                        <h3>Papaya</h3>
+                        <p class="fruit-desc">Smooth and sweet</p>
+                        <p class="fruit-price">₹100 / kg</p>
+                        <button class="btn btn-primary btn-block add-to-cart" data-name="Papaya" data-price="100">Add to
+                            Cart</button>
+                    </div>
+                </div>
+
+                <!-- Dragon Fruit Card -->
+                <div class="fruit-card">
+                    <div class="fruit-img-wrapper"
+                        style="font-size: 80px; display: flex; align-items: center; justify-content: center;">
+                        🐉
+                    </div>
+                    <div class="fruit-info">
+                        <h3>Dragon Fruit</h3>
+                        <p class="fruit-desc">Exotic and colorful</p>
+                        <p class="fruit-price">₹450 / kg</p>
+                        <button class="btn btn-primary btn-block add-to-cart" data-name="Dragon Fruit"
+                            data-price="450">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="section-padding why-choose-us">
+        <div class="container">
+            <h2 class="section-title">Why People Love Freshly ❤️</h2>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <span class="feature-icon">✅</span>
+                    <h3>Always Fresh</h3>
+                    <p>Fruits picked at the right time</p>
+                </div>
+                <div class="feature-item">
+                    <span class="feature-icon">🚚</span>
+                    <h3>Fast Delivery</h3>
+                    <p>Same-day or next-day delivery</p>
+                </div>
+                <div class="feature-item">
+                    <span class="feature-icon">🧼</span>
+                    <h3>Clean & Safe</h3>
+                    <p>Washed and packed carefully</p>
+                </div>
+                <div class="feature-item">
+                    <span class="feature-icon">💳</span>
+                    <h3>Easy Payment</h3>
+                    <p>Pay online or on delivery</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section id="pricing" class="section-padding pricing">
+        <div class="container">
+            <h2 class="section-title">Fruit Boxes Made Simple</h2>
+            <div class="pricing-grid">
+                <!-- Small Box -->
+                <div class="pricing-card">
+                    <h3>🍏 Small Box</h3>
+                    <p class="box-desc">Perfect for 1–2 people</p>
+                    <div class="price-tag">₹800 <span class="period">/ week</span></div>
+                    <button class="btn btn-outline btn-block">Subscribe Now</button>
+                </div>
+                <!-- Family Box -->
+                <div class="pricing-card featured">
+                    <h3>🍎 Family Box</h3>
+                    <p class="box-desc">Great for families</p>
+                    <div class="price-tag">₹1,500 <span class="period">/ week</span></div>
+                    <button class="btn btn-primary btn-block">Subscribe Now</button>
+                </div>
+                <!-- Big Box -->
+                <div class="pricing-card">
+                    <h3>🍉 Big Box</h3>
+                    <p class="box-desc">Best value</p>
+                    <div class="price-tag">₹2,200 <span class="period">/ week</span></div>
+                    <button class="btn btn-outline btn-block">Subscribe Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section-padding testimonials">
+        <div class="container">
+            <h2 class="section-title">What Our Customers Say</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <p class="quote">“The fruits are always fresh and tasty!”</p>
+                    <p class="author">— Sarah</p>
+                </div>
+                <div class="testimonial-card">
+                    <p class="quote">“Ordering is easy and delivery is fast.”</p>
+                    <p class="author">— Mark</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready for Fresh Fruits Every Day?</h2>
+            <a href="#catalog" class="btn btn-light btn-lg">🛒 Order Now</a>
+        </div>
+    </section>
+
+    <!-- Footer with Contact Form -->
+    <footer id="contact">
+        <div class="container footer-container">
+            <div class="footer-grid">
+                <div class="footer-info">
+                    <h3>🍎 S.S.T Fruits</h3>
+                    <p>Your trusted source for fresh, premium fruits delivered with care.</p>
+                    <p style="margin-top: 10px; font-weight: 500;">📞 6382131178</p>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon">📷</a>
+                        <a href="#" class="social-icon">🐦</a>
+                        <a href="#" class="social-icon">📘</a>
+                    </div>
+                </div>
+                <div class="footer-contact-form">
+                    <h4>Send us a message</h4>
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Message" rows="3" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-sm">Send Message</button>
+                    </form>
+                </div>
+                <div class="footer-links-col">
+                    <h4>Links</h4>
+                    <a href="#home">Home</a>
+                    <a href="#catalog">Fruits</a>
+                    <a href="#how-it-works">How It Works</a>
+                    <a href="#pricing">Pricing</a>
+                </div>
+            </div>
+            <p class="copyright">Freshly © 2025</p>
+        </div>
+    </footer>
+
+    <!-- Cart Modal -->
+    <div class="cart-overlay">
+        <div class="cart-modal">
+            <div class="cart-header">
+                <h3>Your Basket</h3>
+                <button class="close-cart">&times;</button>
+            </div>
+            <div class="cart-items">
+                <!-- Items will be injected here -->
+                <div class="empty-cart-msg">Your basket is empty.</div>
+            </div>
+
+            <!-- Checkout Form (Hidden by default) -->
+            <div class="checkout-form-container" style="display: none; padding: 20px;">
+                <h4>Shipping Details</h4>
+                <form id="checkout-form">
+                    <div class="form-group">
+                        <input type="text" id="order-name" placeholder="Full Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" id="order-phone" placeholder="Phone Number" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="order-address" placeholder="Delivery Address" rows="2" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block place-order-btn">Place Order & Pay on
+                        Delivery</button>
+                    <button type="button" class="btn btn-outline btn-block back-to-cart" style="margin-top: 10px;">Back
+                        to Cart</button>
+                </form>
+            </div>
+
+            <div class="cart-footer">
+                <div class="cart-total">
+                    <span>Total:</span>
+                    <span class="total-amount">₹0</span>
+                </div>
+                <button class="btn btn-primary btn-block checkout-btn">Checkout</button>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+    <!-- Banana Varieties Modal -->
+    <div class="banana-varieties-modal" id="bananaModal">
+        <div class="varieties-modal-content">
+            <div class="varieties-header">
+                <h2>🍌 Indian Banana Varieties</h2>
+                <button class="close-varieties" onclick="closeBananaVarieties()">&times;</button>
+            </div>
+            <div class="varieties-grid">
+                <!-- Robusta Banana -->
+                <div class="variety-card">
+                    <div class="variety-emoji">🍌</div>
+                    <h3>Robusta (Poovan)</h3>
+                    <p class="variety-origin">Origin: Tamil Nadu</p>
+                    <p class="variety-desc">Most popular, sweet and aromatic</p>
+                    <p class="variety-price">₹60 / dozen</p>
+                    <button class="btn btn-primary btn-sm add-to-cart" data-name="Robusta Banana" data-price="60">Add to
+                        Cart</button>
+                </div>
+
+                <!-- Nendran Banana -->
+                <div class="variety-card">
+                    <div class="variety-emoji">🍌</div>
+                    <h3>Nendran (Plantain)</h3>
+                    <p class="variety-origin">Origin: Kerala</p>
+                    <p class="variety-desc">Cooking banana, makes great chips</p>
+                    <p class="variety-price">₹50 / dozen</p>
+                    <button class="btn btn-primary btn-sm add-to-cart" data-name="Nendran Banana" data-price="50">Add to
+                        Cart</button>
+                </div>
+
+                <!-- Red Banana -->
+                <div class="variety-card">
+                    <div class="variety-emoji">🍌</div>
+                    <h3>Red Banana</h3>
+                    <p class="variety-origin">Origin: Kerala, Karnataka</p>
+                    <p class="variety-desc">Reddish-purple skin, creamy sweet</p>
+                    <p class="variety-price">₹80 / dozen</p>
+                    <button class="btn btn-primary btn-sm add-to-cart" data-name="Red Banana" data-price="80">Add to
+                        Cart</button>
+                </div>
+
+                <!-- Rasthali Banana -->
+                <div class="variety-card">
+                    <div class="variety-emoji">🍌</div>
+                    <h3>Rasthali</h3>
+                    <p class="variety-origin">Origin: Tamil Nadu</p>
+                    <p class="variety-desc">Small, sweet, perfect for desserts</p>
+                    <p class="variety-price">₹70 / dozen</p>
+                    <button class="btn btn-primary btn-sm add-to-cart" data-name="Rasthali Banana" data-price="70">Add
+                        to Cart</button>
+                </div>
+
+                <!-- Yelakki Banana -->
+                <div class="variety-card">
+                    <div class="variety-emoji">🍌</div>
+                    <h3>Yelakki (Elaichi)</h3>
+                    <p class="variety-origin">Origin: Karnataka</p>
+                    <p class="variety-desc">Premium, thin skin, very sweet</p>
+                    <p class="variety-price">₹100 / dozen</p>
+                    <button class="btn btn-primary btn-sm add-to-cart" data-name="Yelakki Banana" data-price="100">Add
+                        to Cart</button>
+                </div>
+
+                <!-- Karpuravalli Banana -->
+                <div class="variety-card">
+                    <div class="variety-emoji">🍌</div>
+                    <h3>Karpuravalli</h3>
+                    <p class="variety-origin">Origin: South India</p>
+                    <p class="variety-desc">Medicinal properties, firm texture</p>
+                    <p class="variety-price">₹55 / dozen</p>
+                    <button class="btn btn-primary btn-sm add-to-cart" data-name="Karpuravalli Banana"
+                        data-price="55">Add to Cart</button>
+                </div>
+
+                <!-- Monthan Banana -->
+                <div class="variety-card">
+                    <div class="variety-emoji">🍌</div>
+                    <h3>Monthan</h3>
+                    <p class="variety-origin">Origin: Tamil Nadu</p>
+                    <p class="variety-desc">Cooking variety, makes great fries</p>
+                    <p class="variety-price">₹45 / dozen</p>
+                    <button class="btn btn-primary btn-sm add-to-cart" data-name="Monthan Banana" data-price="45">Add to
+                        Cart</button>
+                </div>
+
+                <!-- Grand Naine -->
+                <div class="variety-card">
+                    <div class="variety-emoji">🍌</div>
+                    <h3>Grand Naine</h3>
+                    <p class="variety-origin">Origin: Maharashtra</p>
+                    <p class="variety-desc">Export quality, long shelf life</p>
+                    <p class="variety-price">₹65 / dozen</p>
+                    <button class="btn btn-primary btn-sm add-to-cart" data-name="Grand Naine Banana"
+                        data-price="65">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Apple Varieties Modal -->
+    <div class="apple-varieties-modal" id="appleModal">
+        <div class="varieties-modal-content">
+            <div class="varieties-header">
+                <h2>🍎 Indian Apple Varieties</h2>
+                <button class="close-varieties" onclick="closeAppleVarieties()">&times;</button>
+            </div>
+            <div class="varieties-grid">
+                <!-- Kashmiri Apple -->
+                <div class="variety-card">
+                    <div class="variety-emoji">🍎</div>
+                    <h3>Kashmiri Apple</h3>
+                    <p class="variety-origin">Origin: Kashmir, India</p>
+                    <p class="variety-desc">Premium quality, crisp and sweet</p>
+                    <p class="variety-price">₹280 / kg</p>
+                    <button class="btn btn-primary btn-sm add-to-cart" data-name="Kashmiri Apple" data-price="280">Add
+                        to Cart</button>
+                </div>
+
+                <!-- Shimla Apple -->
+                <div class="variety-card">
+                    <div class="variety-emoji">🍎</div>
+                    <h3>Shimla Apple</h3>
+                    <p class="variety-origin">Origin: Himachal Pradesh</p>
+                    <p class="variety-desc">Royal Delicious variety, juicy</p>
+                    <p class="variety-price">₹250 / kg</p>
+                    <button class="btn btn-primary btn-sm add-to-cart" data-name="Shimla Apple" data-price="250">Add to
+                        Cart</button>
+                </div>
+
+                <!-- Kinnaur Apple -->
+                <div class="variety-card">
+                    <div class="variety-emoji">🍎</div>
+                    <h3>Kinnaur Apple</h3>
+                    <p class="variety-origin">Origin: Kinnaur, HP</p>
+                    <p class="variety-desc">Organic, grown at high altitude</p>
+                    <p class="variety-price">₹320 / kg</p>
+                    <button class="btn btn-primary btn-sm add-to-cart" data-name="Kinnaur Apple" data-price="320">Add to
+                        Cart</button>
+                </div>
+
+                <!-- Ambri Apple -->
+                <div class="variety-card">
+                    <div class="variety-emoji">🍏</div>
+                    <h3>Ambri Apple</h3>
+                    <p class="variety-origin">Origin: Kashmir Valley</p>
+                    <p class="variety-desc">Unique flavor, aromatic</p>
+                    <p class="variety-price">₹300 / kg</p>
+                    <button class="btn btn-primary btn-sm add-to-cart" data-name="Ambri Apple" data-price="300">Add to
+                        Cart</button>
+                </div>
+
+                <!-- American Apple -->
+                <div class="variety-card">
+                    <div class="variety-emoji">🍎</div>
+                    <h3>American Apple</h3>
+                    <p class="variety-origin">Origin: Himachal Pradesh</p>
+                    <p class="variety-desc">Red Delicious, sweet and firm</p>
+                    <p class="variety-price">₹220 / kg</p>
+                    <button class="btn btn-primary btn-sm add-to-cart" data-name="American Apple" data-price="220">Add
+                        to Cart</button>
+                </div>
+
+                <!-- Golden Apple -->
+                <div class="variety-card">
+                    <div class="variety-emoji">🍏</div>
+                    <h3>Golden Delicious</h3>
+                    <p class="variety-origin">Origin: Uttarakhand</p>
+                    <p class="variety-desc">Yellow-green, mildly sweet</p>
+                    <p class="variety-price">₹240 / kg</p>
+                    <button class="btn btn-primary btn-sm add-to-cart" data-name="Golden Delicious" data-price="240">Add
+                        to Cart</button>
+                </div>
+
+                <!-- Chaubattia Apple -->
+                <div class="variety-card">
+                    <div class="variety-emoji">🍎</div>
+                    <h3>Chaubattia Apple</h3>
+                    <p class="variety-origin">Origin: Uttarakhand</p>
+                    <p class="variety-desc">Locally grown, fresh and crisp</p>
+                    <p class="variety-price">₹200 / kg</p>
+                    <button class="btn btn-primary btn-sm add-to-cart" data-name="Chaubattia Apple" data-price="200">Add
+                        to Cart</button>
+                </div>
+
+                <!-- Fuji Apple -->
+                <div class="variety-card">
+                    <div class="variety-emoji">🍎</div>
+                    <h3>Fuji Apple (Indian)</h3>
+                    <p class="variety-origin">Origin: Himachal Pradesh</p>
+                    <p class="variety-desc">Super sweet, crunchy texture</p>
+                    <p class="variety-price">₹260 / kg</p>
+                    <button class="btn btn-primary btn-sm add-to-cart" data-name="Fuji Apple" data-price="260">Add to
+                        Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Orange Varieties Modal -->
+    <div class="orange-varieties-modal" id="orangeModal">
+        <div class="varieties-modal-content">
+            <div class="varieties-header">
+                <h2>🍊 Orange Varieties from Around the World</h2>
+                <button class="close-varieties" onclick="closeOrangeVarieties()">&times;</button>
+            </div>
+            <div class="varieties-grid">
+                <!-- Navel Orange -->
+                <div class="variety-card">
+                    <div class="variety-emoji">🍊</div>
+                    <h3>Navel Orange</h3>
+                    <p class="variety-origin">Origin: California, USA</p>
+                    <p class="variety-desc">Sweet, seedless, easy to peel</p>
+                    <p class="variety-price">₹320 / kg</p>
+                    <button class="btn btn-primary btn-sm add-to-cart" data-name="Navel Orange" data-price="320">Add to
+                        Cart</button>
+                </div>
+
+                <!-- Valencia Orange -->
+                <div class="variety-card">
+                    <div class="variety-emoji">🍊</div>
+                    <h3>Valencia Orange</h3>
+                    <p class="variety-origin">Origin: Spain</p>
+                    <p class="variety-desc">Perfect for juicing, sweet flavor</p>
+                    <p class="variety-price">₹280 / kg</p>
+                    <button class="btn btn-primary btn-sm add-to-cart" data-name="Valencia Orange" data-price="280">Add
+                        to Cart</button>
+                </div>
+
+                <!-- Blood Orange -->
+                <div class="variety-card">
+                    <div class="variety-emoji">🔴</div>
+                    <h3>Blood Orange</h3>
+                    <p class="variety-origin">Origin: Italy</p>
+                    <p class="variety-desc">Deep red flesh, berry-like taste</p>
+                    <p class="variety-price">₹450 / kg</p>
+                    <button class="btn btn-primary btn-sm add-to-cart" data-name="Blood Orange" data-price="450">Add to
+                        Cart</button>
+                </div>
+
+                <!-- Mandarin Orange -->
+                <div class="variety-card">
+                    <div class="variety-emoji">🍊</div>
+                    <h3>Mandarin Orange</h3>
+                    <p class="variety-origin">Origin: China</p>
+                    <p class="variety-desc">Small, sweet, easy to peel</p>
+                    <p class="variety-price">₹250 / kg</p>
+                    <button class="btn btn-primary btn-sm add-to-cart" data-name="Mandarin Orange" data-price="250">Add
+                        to Cart</button>
+                </div>
+
+                <!-- Cara Cara Orange -->
+                <div class="variety-card">
+                    <div class="variety-emoji">🍊</div>
+                    <h3>Cara Cara Orange</h3>
+                    <p class="variety-origin">Origin: Venezuela</p>
+                    <p class="variety-desc">Pink flesh, low acidity</p>
+                    <p class="variety-price">₹380 / kg</p>
+                    <button class="btn btn-primary btn-sm add-to-cart" data-name="Cara Cara Orange" data-price="380">Add
+                        to Cart</button>
+                </div>
+
+                <!-- Seville Orange -->
+                <div class="variety-card">
+                    <div class="variety-emoji">🍊</div>
+                    <h3>Seville Orange</h3>
+                    <p class="variety-origin">Origin: Spain</p>
+                    <p class="variety-desc">Bitter, perfect for marmalade</p>
+                    <p class="variety-price">₹200 / kg</p>
+                    <button class="btn btn-primary btn-sm add-to-cart" data-name="Seville Orange" data-price="200">Add
+                        to Cart</button>
+                </div>
+
+                <!-- Jaffa Orange -->
+                <div class="variety-card">
+                    <div class="variety-emoji">🍊</div>
+                    <h3>Jaffa Orange</h3>
+                    <p class="variety-origin">Origin: Israel</p>
+                    <p class="variety-desc">Thick skin, sweet and juicy</p>
+                    <p class="variety-price">₹340 / kg</p>
+                    <button class="btn btn-primary btn-sm add-to-cart" data-name="Jaffa Orange" data-price="340">Add to
+                        Cart</button>
+                </div>
+
+                <!-- Clementine -->
+                <div class="variety-card">
+                    <div class="variety-emoji">🍊</div>
+                    <h3>Clementine</h3>
+                    <p class="variety-origin">Origin: Algeria</p>
+                    <p class="variety-desc">Seedless, sweet, small size</p>
+                    <p class="variety-price">₹300 / kg</p>
+                    <button class="btn btn-primary btn-sm add-to-cart" data-name="Clementine" data-price="300">Add to
+                        Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
