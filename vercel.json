@@ -1,27 +1,14 @@
 {
   "version": 2,
-  "builds": [
+  "rewrites": [
     {
-      "src": "api/*.js",
-      "use": "@vercel/node"
+      "source": "/api/send-whatsapp",
+      "destination": "/api/send-whatsapp.js"
     },
     {
-      "src": "*.html",
-      "use": "@vercel/static"
+      "source": "/api/send-telegram",
+      "destination": "/api/send-telegram.js"
     }
   ],
-  "routes": [
-    {
-      "src": "/api/send-whatsapp",
-      "dest": "/api/send-whatsapp.js"
-    },
-    {
-      "src": "/api/send-telegram",
-      "dest": "/api/send-telegram.js"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/$1"
-    }
-  ]
+  "cleanUrls": true
 }
