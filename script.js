@@ -141,15 +141,17 @@ document.addEventListener('DOMContentLoaded', () => {
                 name = this.dataset.name;
                 price = parseInt(this.dataset.price);
 
-                // Check for preferences if it's a drink
+                // Check for preferences ONLY if it's a drink card (fruit-card)
                 const card = this.closest('.fruit-card');
-                const sugarActive = card.querySelector('.sugar-option.active');
-                if (sugarActive) {
-                    sugar = sugarActive.dataset.value;
-                }
-                const iceActive = card.querySelector('.ice-option.active');
-                if (iceActive) {
-                    ice = iceActive.dataset.value;
+                if (card) {
+                    const sugarActive = card.querySelector('.sugar-option.active');
+                    if (sugarActive) {
+                        sugar = sugarActive.dataset.value;
+                    }
+                    const iceActive = card.querySelector('.ice-option.active');
+                    if (iceActive) {
+                        ice = iceActive.dataset.value;
+                    }
                 }
             }
 
