@@ -224,13 +224,17 @@ p {
     font-weight: 700;
     font-size: 1.25rem;
     color: var(--text-color);
+    white-space: nowrap;
+    margin-right: 30px;
+    flex-shrink: 0;
 }
 
 .nav-links {
     display: flex;
-    gap: 30px;
+    gap: 20px;
     display: none;
     /* Mobile first, hidden by default */
+    margin-right: auto;
 }
 
 @media (min-width: 900px) {
@@ -484,6 +488,7 @@ p {
 .fruit-img-wrapper img {
     max-height: 100%;
     filter: drop-shadow(0 10px 10px rgba(0, 0, 0, 0.1));
+    border-radius: var(--radius-md);
 }
 
 .fruit-name {
@@ -1047,4 +1052,125 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
+
+}
+
+/* Payment QR Section */
+.payment-selection {
+    margin-top: 15px;
+}
+
+.payment-option {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px;
+    border: 2px solid #eee;
+    border-radius: 12px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition: all 0.3s;
+}
+
+.payment-option:has(input:checked) {
+    border-color: #ff6b6b;
+    background: #fff9f0;
+}
+
+#qr-code-img img {
+    max-width: 200px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Drink Preferences (Sugar & Ice) */
+.preferences-container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 15px;
+}
+
+.preference-group {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.preference-group label {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #64748b;
+}
+
+.preference-toggle {
+    display: flex;
+    background: #f1f5f9;
+    padding: 3px;
+    border-radius: 8px;
+    width: 100px;
+}
+
+.sugar-option,
+.ice-option {
+    flex: 1;
+    text-align: center;
+    padding: 6px 4px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #64748b;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: all 0.2s;
+}
+
+.sugar-option.active,
+.ice-option.active {
+    background: white;
+    color: var(--primary-color);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.drink-card-footer {
+    width: 100%;
+    margin-top: auto;
+}
+
+/* Rating Box */
+.footer-rating-box {
+    background: white;
+    padding: 24px;
+    border-radius: 15px;
+    box-shadow: var(--shadow-sm);
+}
+
+.rating-container {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.stars {
+    font-size: 2rem;
+    color: #ddd;
+    cursor: pointer;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.star {
+    transition: color 0.2s;
+    padding: 0 2px;
+}
+
+.star.active,
+.star:hover,
+.star:hover~.star {
+    color: #ffc107;
+}
+
+#rating-text {
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 5px;
 }
